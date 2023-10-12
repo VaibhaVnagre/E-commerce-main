@@ -1,0 +1,74 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Inter:wght@300&display=swap');
+* ,*:after , *:before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+:root{
+  --navy:#051831;
+  --gray:#26405E;
+  --lightgray:rgba(173, 178, 183, 0.834);
+  --white:#F9F8F8;
+  --pureWhite:#FEFEFF;
+  font-size: 62.5%;
+}
+html{
+  scroll-behavior: smooth;
+  font-size: 1.6rem;
+}
+
+body {
+  font-family: 'Andika', sans-serif !important; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--pureWhite);
+  font-weight: 500;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  }
+
+@media screen and (max-width: 400px){
+  html{
+    font-size: 35%;
+  }
+}
+
+@media screen and (min-width:400px) and (max-width: 500px){
+  html{
+    font-size: 35%;
+  }
+}
+
+
+@media screen and (min-width:500px) and (max-width: 600px){
+  html{
+    font-size: 38%;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width: 800px){
+  html{
+    font-size: 40%;
+  }
+}
+
+@media screen and (min-width:800px) and (max-width: 1000px){
+  html{
+    font-size: 45%;
+  }
+}
+
+@media screen and (min-width:1000px) and (max-width: 1200px){
+  html{
+    font-size: 50%;
+  }
+}

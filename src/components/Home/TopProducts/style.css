@@ -1,0 +1,12 @@
+.TopProducts{
+    margin-top: 5rem;
+}
+.TopProducts h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--navy);
+    text-align: center;
+}
+.topAllProducts{
+    margin: 0 !important;
+}

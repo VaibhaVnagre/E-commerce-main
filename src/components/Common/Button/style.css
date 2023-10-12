@@ -1,0 +1,39 @@
+
+.buttonDiv .button{
+    padding:1rem;
+    border: 2px solid var(--white) !important;
+    width: 15rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border: none;
+    background-color: var(--navy);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.buttonDiv .outLined{
+    padding: 1rem;
+    background-color: none;
+    border: 2px solid var(--navy);
+    color: var(--navy);
+    width: 15rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+}
+@media screen and (max-width:500px) {
+    .buttonDiv .outLined{
+        padding: .5rem;
+        width: 10rem;
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:800px) {
+    .buttonDiv .outLined{
+        padding: .8rem;
+        width: 13rem;
+        font-size: 1.4rem;
+    }
+}

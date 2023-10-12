@@ -1,0 +1,84 @@
+.selectedProduct{
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    padding-top: 8rem;
+}
+.mainImg{
+    border: 2px solid lime;
+    width: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 0;
+    & img{
+        width: 100%;
+        border-radius: 50px 0;
+    }
+}
+.otherImagesDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    & img{
+        cursor: pointer;
+        border: 2px solid lime;
+    }
+}
+.selectedRupeeDiv{
+    display: flex;
+    gap: 5rem;
+    /* border: 1px solid; */
+    align-items: center;
+    font-size: 2.5rem;
+    margin-left: -5px !important;
+}
+.addToCartDiv{
+    border-radius: 130px 0px 150px 130px;
+    display: flex;
+    color: var(--white);
+    background-color: var(--navy);
+    cursor: pointer;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+    width:8rem;
+    border: 1px solid ;
+}
+.priceIcon{
+    display: flex;
+    align-items: center;
+}
+.selectedProductName{
+    font-size: 3rem;
+}
+
+.productInfo{
+    margin-top: 1rem;
+    padding: 0 5rem;
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.selectedProductImgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.productDesc{
+
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.selectedProductPrices{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

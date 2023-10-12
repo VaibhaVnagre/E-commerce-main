@@ -1,0 +1,41 @@
+.css-lbjakd-MuiStack-root{
+    width: 30rem !important;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s !important;
+    animation: fadein 0.5s, fadeout 0.5s 4.5s !important; 
+    position: fixed;
+    top: 12rem;
+    right: 2rem;
+    z-index: 100;
+    
+}
+.MuiAlert-message{
+    font-size: 1.5rem !important;
+}
+
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 60px; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 60px; opacity: 0;}
+} 
+@media screen and (max-width: 800px){
+.toaster{
+    display: none !important; 
+ }
+}

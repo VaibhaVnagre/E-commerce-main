@@ -1,0 +1,104 @@
+.modal{
+    width: 100%;
+    background-color:var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85.9vh;
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1011%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(239%2c 242%2c 245%2c 1)'%3e%3c/rect%3e%3cpath d='M887.3319595487342 473.12890073600903L1035.165256149078 452.4959377073387 956.6391396175896 348.28826140226624z' fill='rgba(93%2c 152%2c 216%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M364.983%2c121.192C390.037%2c121.643%2c417.105%2c118.567%2c431.097%2c97.779C446.523%2c74.86%2c446.799%2c44.271%2c432.777%2c20.467C418.948%2c-3.008%2c392.164%2c-16.313%2c364.983%2c-14.452C340.491%2c-12.775%2c323.639%2c7.393%2c311.562%2c28.766C299.739%2c49.689%2c290.844%2c74.662%2c302.87%2c95.469C314.889%2c116.264%2c340.969%2c120.759%2c364.983%2c121.192' fill='rgba(93%2c 152%2c 216%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M72.771%2c237.033C94.499%2c236.467%2c115.812%2c227.865%2c126.834%2c209.132C138.001%2c190.152%2c135.77%2c166.959%2c125.442%2c147.51C114.341%2c126.607%2c96.426%2c106.554%2c72.771%2c107.328C49.912%2c108.076%2c37.002%2c130.859%2c25.754%2c150.773C14.773%2c170.214%2c2.918%2c192.474%2c13.604%2c212.079C24.584%2c232.223%2c49.837%2c237.63%2c72.771%2c237.033' fill='rgba(93%2c 152%2c 216%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M268.90853782509157 135.62019621691974L411.29995303191725 56.69134591860687 332.3711027336044-85.7000692882188 189.97968752677872-6.771218989905947z' fill='rgba(93%2c 152%2c 216%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1197.311%2c733.819C1252.239%2c736.915%2c1313.109%2c724.258%2c1340.179%2c676.363C1366.971%2c628.959%2c1344.52%2c571.664%2c1314.715%2c526.094C1288.167%2c485.503%2c1245.781%2c459.691%2c1197.311%2c457.926C1145.288%2c456.031%2c1090.095%2c471.866%2c1064.098%2c516.967C1038.124%2c562.027%2c1052.631%2c617.375%2c1079.855%2c661.691C1105.63%2c703.649%2c1148.146%2c731.048%2c1197.311%2c733.819' fill='rgba(93%2c 152%2c 216%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1359.0706981284047 243.67296217391345L1220.466416662997 280.81186746006546 1257.605321949149 419.41614892547324 1396.2096034145568 382.2772436393212z' fill='rgba(93%2c 152%2c 216%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1011'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e"); */
+}
+.innerModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 50rem;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 2rem;
+    }
+    & input{
+        width:100%;
+        padding: 1rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+    .buttonDiv{
+        width: 100%;
+        padding:0 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    & button{
+        width: 50%;
+        padding: 1rem;
+        border: 2px solid var(--lightgray);
+        background-color: rgb(128, 229, 128);
+        font-size: 1.3rem;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 50px;
+    }
+
+}
+
+input:focus{
+    outline: none !important;
+}
+
+
+.placedd{
+    background-color: var(--navy);
+    border-radius: 50px;
+    color:lime;
+    height: 40rem;
+    animation: myAnim 3s ease 0s 100 normal forwards;
+    display: flex;
+    gap: 3rem;
+    & h1{
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}

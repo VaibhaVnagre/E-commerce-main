@@ -1,0 +1,186 @@
+.shop{
+    position: relative;
+}
+.allProducts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:6.5rem 5rem;
+    gap: 3rem;
+    margin-left: 10rem;
+}
+.product{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #f7b538;
+    border: 2px solid var(--lightgray);
+    display: flex;
+    color: #780116;
+    flex-direction: column;
+    /* padding:2rem 1rem; */
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+
+    & .productImgDiv{
+        /* border: 2px solid var(--navy); */
+        width: 30rem;
+        height: 25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 20;
+        background-color: #fdeed6;
+        & img{
+            mix-blend-mode:darken;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position:center ;
+        }
+    }
+}
+.result{
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 100%;
+    height: 58.2vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.product:hover{
+    border: 2px solid var(--navy);
+    cursor: pointer;
+}
+.productPrices{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .8rem;
+}
+.productCartIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+}
+.rupeeDiv{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: 600; font-size: 1.6rem;
+    /* margin-top: .8rem; */
+}
+.productName{
+    margin-top: 1rem;
+    font-weight: 600;font-size: 1.6rem;
+}
+
+@media screen and (max-width: 400px){
+    .headerLinks{
+      display: none;
+  }
+  .mobileDrawer{
+      display: block;
+  }
+  
+  .mobileDrawer .mobileLinks {
+      color:black !important;
+      font-size: 2rem;
+  }
+  } 
+    @media screen and (max-width: 800px){
+    .allProducts{
+        padding:5rem 2rem;
+    }
+   .product{
+    border: 2px solid var(--lightgray);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+ }
+}
+
+.filters{
+    font-size: 1.8rem;
+    color: #fdeed6;
+    /* background-color: var(--white); */
+    font-weight: 600;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items:start;
+    position: fixed;
+    top: 10rem;
+    width: fit-content;
+
+    & p{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        text-align:center;
+        font-size: 1.4rem;
+        color: var(--white);
+        width: 12rem;
+        padding: .2rem;
+        background-color: #780116;
+        border: 2px solid #780116;
+        border-radius: 10px;
+    }
+}
+.allProductsBtn{
+    position: fixed;
+    top: 28rem;
+    padding: 3.5rem 2rem;
+    color: #fdeed6;
+    /* background-color: var(--lightgray); */
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+@media screen  and (max-width:500px){
+    .allProducts{
+        margin-left: 0;
+        margin-top: 11rem;
+        padding: 2rem;
+    }
+
+    .filters{
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1740' height='1000' preserveAspectRatio='none' viewBox='0 0 1740 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1035%26quot%3b)' fill='none'%3e%3crect width='1740' height='1000' x='0' y='0' fill='rgba(228%2c 237%2c 247%2c 1)'%3e%3c/rect%3e%3cpath d='M499.8 413.55 a36.83 36.83 0 1 0 73.66 0 a36.83 36.83 0 1 0 -73.66 0z' fill='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M1668.36 35.14L1715.83 35.14L1715.83 82.61L1668.36 82.61z' stroke='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M1595.74 605.37 a63.61 63.61 0 1 0 127.22 0 a63.61 63.61 0 1 0 -127.22 0z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M744.21 46.34 a78.11 78.11 0 1 0 156.22 0 a78.11 78.11 0 1 0 -156.22 0z' fill='rgba(242%2c 159%2c 159%2c 1)'%3e%3c/path%3e%3cpath d='M501.64 633.02a46.35 46.35 0 1 0 88.32-28.13z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M189.04 700.51 a54.22 54.22 0 1 0 108.44 0 a54.22 54.22 0 1 0 -108.44 0z' fill='rgba(242%2c 159%2c 159%2c 1)'%3e%3c/path%3e%3cpath d='M536.72 84.21a61.9 61.9 0 1 0 19.92-122.19z' fill='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M1491.07 209.05L1536.96 209.05L1536.96 260.73L1491.07 260.73z' stroke='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M1024.02 297.71L1076.78 297.71L1076.78 298.4L1024.02 298.4z' fill='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M784.22 634.01L800.23 634.01L800.23 691.41L784.22 691.41z' fill='rgba(242%2c 159%2c 159%2c 1)'%3e%3c/path%3e%3cpath d='M1736.58 703.07L1827.28 703.07L1827.28 795.26L1736.58 795.26z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M113.59 586.27L191.81 586.27L191.81 664.49L113.59 664.49z' stroke='rgba(242%2c 159%2c 159%2c 1)'%3e%3c/path%3e%3cpath d='M1173.27 441.93a56.09 56.09 0 1 0-101.13 48.55z' stroke='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M309.05 621.8a20.35 20.35 0 1 0 20.54-35.14z' stroke='rgba(242%2c 159%2c 159%2c 1)'%3e%3c/path%3e%3cpath d='M1590.9 658.63L1676.72 658.63L1676.72 744.45L1590.9 744.45z' stroke='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M368.47 610.17 a59.99 59.99 0 1 0 119.98 0 a59.99 59.99 0 1 0 -119.98 0z' stroke='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M1053.43 237.24a16.17 16.17 0 1 0 25.11 20.38z' stroke='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M1118.27 785.82L1213.17 785.82L1213.17 866.4L1118.27 866.4z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M49.98 250.86 a89.82 89.82 0 1 0 179.64 0 a89.82 89.82 0 1 0 -179.64 0z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M1631.48 343.32a47.27 47.27 0 1 0-90.64-26.88z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M352.71 516.53L388.08 516.53L388.08 551.9L352.71 551.9z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M135.85 912.15a75.51 75.51 0 1 0-60.31 138.45z' stroke='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1035'%3e%3crect width='1740' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     flex-direction: row;
+     align-items: center;
+     gap: 1rem;
+     padding:1.3rem 1rem;
+     z-index: 100;
+     margin-top: -.5rem;
+     
+     & p{
+        font-size: 1.2rem;
+        width: 10rem;
+     }
+    }
+    .allProductsBtn{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1740' height='1000' preserveAspectRatio='none' viewBox='0 0 1740 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1035%26quot%3b)' fill='none'%3e%3crect width='1740' height='1000' x='0' y='0' fill='rgba(228%2c 237%2c 247%2c 1)'%3e%3c/rect%3e%3cpath d='M499.8 413.55 a36.83 36.83 0 1 0 73.66 0 a36.83 36.83 0 1 0 -73.66 0z' fill='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M1668.36 35.14L1715.83 35.14L1715.83 82.61L1668.36 82.61z' stroke='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M1595.74 605.37 a63.61 63.61 0 1 0 127.22 0 a63.61 63.61 0 1 0 -127.22 0z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M744.21 46.34 a78.11 78.11 0 1 0 156.22 0 a78.11 78.11 0 1 0 -156.22 0z' fill='rgba(242%2c 159%2c 159%2c 1)'%3e%3c/path%3e%3cpath d='M501.64 633.02a46.35 46.35 0 1 0 88.32-28.13z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M189.04 700.51 a54.22 54.22 0 1 0 108.44 0 a54.22 54.22 0 1 0 -108.44 0z' fill='rgba(242%2c 159%2c 159%2c 1)'%3e%3c/path%3e%3cpath d='M536.72 84.21a61.9 61.9 0 1 0 19.92-122.19z' fill='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M1491.07 209.05L1536.96 209.05L1536.96 260.73L1491.07 260.73z' stroke='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M1024.02 297.71L1076.78 297.71L1076.78 298.4L1024.02 298.4z' fill='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M784.22 634.01L800.23 634.01L800.23 691.41L784.22 691.41z' fill='rgba(242%2c 159%2c 159%2c 1)'%3e%3c/path%3e%3cpath d='M1736.58 703.07L1827.28 703.07L1827.28 795.26L1736.58 795.26z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M113.59 586.27L191.81 586.27L191.81 664.49L113.59 664.49z' stroke='rgba(242%2c 159%2c 159%2c 1)'%3e%3c/path%3e%3cpath d='M1173.27 441.93a56.09 56.09 0 1 0-101.13 48.55z' stroke='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M309.05 621.8a20.35 20.35 0 1 0 20.54-35.14z' stroke='rgba(242%2c 159%2c 159%2c 1)'%3e%3c/path%3e%3cpath d='M1590.9 658.63L1676.72 658.63L1676.72 744.45L1590.9 744.45z' stroke='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M368.47 610.17 a59.99 59.99 0 1 0 119.98 0 a59.99 59.99 0 1 0 -119.98 0z' stroke='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M1053.43 237.24a16.17 16.17 0 1 0 25.11 20.38z' stroke='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3cpath d='M1118.27 785.82L1213.17 785.82L1213.17 866.4L1118.27 866.4z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M49.98 250.86 a89.82 89.82 0 1 0 179.64 0 a89.82 89.82 0 1 0 -179.64 0z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M1631.48 343.32a47.27 47.27 0 1 0-90.64-26.88z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M352.71 516.53L388.08 516.53L388.08 551.9L352.71 551.9z' fill='rgba(236%2c 222%2c 143%2c 1)'%3e%3c/path%3e%3cpath d='M135.85 912.15a75.51 75.51 0 1 0-60.31 138.45z' stroke='rgba(131%2c 221%2c 137%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1035'%3e%3crect width='1740' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+        position: fixed;
+        top: 10rem;
+        left: 0rem;
+        width: 100%;
+        margin-top: 3.5rem;
+        text-align: center;
+        z-index: 100;
+    }
+  }
+  @media screen  and  (min-width:500px) and (max-width:800px){
+   .category{
+    margin-top: 3rem;
+    padding-bottom: 0;
+   }
+  }

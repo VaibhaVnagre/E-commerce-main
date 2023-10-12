@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#780116;
+}
+::-webkit-scrollbar-track{
+    background-color:#c32f27;
+}
+.relatedProducts{
+    font-size: 2.5rem;
+    padding: 8rem 0 4rem 12rem;
+}
+.shuffled{
+    padding: 0 !important;
+    padding-bottom: 4rem !important;
+}
+.botNav{
+display: none !important;
+}
+
+.productRupeeDivv{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100%;
+}
+.Profile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 58.5vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+
+    & p{
+        font-size: 1.6rem;
+    }
+    & img{
+        width: 12rem;
+    }
+    & button{
+        padding: .5rem 3rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+        background-color: var(--navy);
+        border: 1px solid var(--navy);
+        color: var(--white);
+    }
+}
+
+
+.HomePage , .ShopPage , .CartPage{
+    background-color: #d8572a;
+}
+.Header{
+    background-color: #db7c26 !important;
+}
